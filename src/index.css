@@ -894,8 +894,7 @@ font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 #p5{
   color: royalblue;
   font-weight: normal;
-  font-size: 15px;
-  
+  font-size: 15px; 
 }
 #img10{
   width: 15px;
@@ -909,18 +908,39 @@ font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font-weight: bold;
   color: royalblue;
   font-size: medium;
-  background-color: transparent;
+  background-color: white;
   border: 2px solid royalblue;
-  border-radius: 5px;
+  border-radius: 10px;
   margin-top: 20px;
+}
+#a3:hover{
+   background: linear-gradient(-45deg, #5eb746,#dec775, #71b1ca);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+  color: white;
+  border: 2px solid white;
+}
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
 }
 #gbb1{
   margin-left: 30px;
   background-color: #ffffff;
-  border-radius: 5px;
+  border-radius: 10px;
   padding-left: 25px;
   padding-top: 10px;
   width: 350px;
+  color: royalblue;
+  font-size: small;
+  font-weight: normal;
   padding-bottom: 15px;
 }
 #p6{
@@ -929,15 +949,82 @@ font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font-size: 17px;
   
 }
-#gbb2{
-  margin-left: 10px;
-  background-color: royalblue;
+
+
+  /*margin-left: 10px;
+  background-color: rgb(255, 255, 255);
   border: 2px solid royalblue;
   border-radius: 5px;
   padding-left: 25px;
  
   width: 330px;
-  padding-bottom: 25px;
+  padding-bottom: 25px; */
+  #gbb2{
+    margin-left: 30px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding-left: 25px;
+    padding-top: 10px;
+    width: 350px;
+    color: royalblue;
+    font-size: small;
+    font-weight: normal;
+    padding-bottom: 15px;
+}
+
+#gbb2:hover{
+  background: linear-gradient(-45deg,  #23d5ab ,#ee7752,#e73c7e, #23a6d5);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+  color: white;
+  transform: scale(1.2);
+}
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+#gbb1:hover{
+  background: linear-gradient(-45deg,  #23d5ab ,#ee7752,#e73c7e, #23a6d5);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+  color: white;
+  transform: scale(1.2);
+}
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+#gbb3:hover{
+  background: linear-gradient(-45deg,  #23d5ab ,#ee7752,#e73c7e, #23a6d5);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+  color: white;
+  transform: scale(1.2);
+}
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
 }
 #p7{
   color: white;
@@ -965,7 +1052,7 @@ font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   margin-top: 20px;
 }
 #s5{
-  color: white;
+  color: royalblue;
   font-size: 30px;
   padding: 0px;
 }
@@ -990,10 +1077,13 @@ font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 #gbb3{
   margin-left: 30px;
   background-color: #ffffff;
-  border-radius: 5px;
+  border-radius: 10px;
   padding-left: 25px;
   padding-top: 10px;
   width: 350px;
+  color: royalblue;
+  font-size: small;
+  font-weight:normal;
   padding-bottom: 15px;
 
 }
@@ -1100,6 +1190,7 @@ grid-template-columns: repeat(2,2fr);
   color: white;
   font-color:white;
 }
+
 #pp2{
 margin-top: 0px;
 margin-left: 20px;
