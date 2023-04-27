@@ -7,7 +7,26 @@ body{
   
   background-color:white;
   font-family: 'Montserrat', sans-serif;
+} /*
+body{
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+  color: white;
+  transform: scale(1.2);
 }
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+
+} */
 *{
   box-sizing: border-box;
 }
@@ -406,7 +425,29 @@ background-color: #ffffff;
 
       }
 
-
+      .hover-underline-animation {
+        display: inline-block;
+        position: relative;
+        color: #0087ca;
+      }
+      
+      .hover-underline-animation:after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        transform: scaleX(0);
+        height: 2px;
+        bottom: 0;
+        left: 0;
+        background-color: #0d00ff;
+        transform-origin: bottom right;
+        transition: transform 0.25s ease-out;
+      }
+      
+      .hover-underline-animation:hover:after {
+        transform: scaleX(1);
+        transform-origin: bottom left;
+      }
    
    .container7{
     background-color: rgb(255, 255, 255);
@@ -509,10 +550,7 @@ background-color: #ffffff;
           height: auto;
 
         }
-        .items span{
-          color: #000000;
-          border-bottom: 5px solid #d4a72c;
-        }
+       
         .container{
           background-color: rgb(255, 255, 255);
           width: auto;
@@ -596,7 +634,7 @@ background-color: #ffffff;
       background-color: rgb(255, 255, 255);
       width: auto;
       margin-top:0px;
-      margin-left: 480px;
+      margin-left: 380px;
 
 
     display: grid;
@@ -614,10 +652,30 @@ background-color: #ffffff;
   height: 20px;
   width: 600px;
 }   
-.item span{
-  color: #000000;
-  border-bottom: 4px solid coral;
+
+.hover-underline-animation {
   text-align: center;
+  display: inline-block;
+  position: relative;
+  color: #000000;
+}
+
+.hover-underline-animation:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 5px;
+  bottom: 0;
+  left: 0;
+  background-color: #fd8413;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.hover-underline-animation:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
 }
  .item2{
   text-align: center;
@@ -643,8 +701,8 @@ border-image: round;
   background-color: rgb(255, 255, 255);
   width: auto;
   margin-top:150px;
-  margin-left: 210px;
-  margin-right: 120px;
+  margin-left: 310px;
+  margin-right: ;
 
 
 display: grid;
@@ -1188,7 +1246,7 @@ grid-template-columns: repeat(2,2fr);
   background-color: royalblue;
   border-radius: 5px;
   color: white;
-  font-color:white;
+
 }
 
 #pp2{
@@ -1348,7 +1406,10 @@ grid-template-columns: repeat(1,1fr);
   color: royalblue;
 }
 
-
+#logo1{
+  border-radius: 50%;
+  width: 60px;
+}
 
 
 
